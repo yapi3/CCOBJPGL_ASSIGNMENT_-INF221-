@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) throws Exception {
+        
+        ParentFruits pf = new ParentFruits(); //Object creation
+        ChildApple ca = new ChildApple();
+        Grapes g = new Grapes();
+        
+        pf.color = "Red";
+        pf.taste = "Sweet";
+        pf.NumPcs = 20;
+
+        ca.color = "Green";
+        ca.taste = "Sour";
+        ca.NumPcs = 5;
+
+        g.color = "Blue";
+
+        //call out methods from parent class
+        ca.checkFruits();
+        pf.checkFruits(); 
+        g.checkFruits();
+
+        //methods from child class
+        ca.drinks();
+    }
+}

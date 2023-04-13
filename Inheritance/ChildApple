@@ -1,0 +1,9 @@
+public class ChildApple extends ParentFruits {
+    
+void drinks()
+{
+    System.out.println("Apple Shake");
+    System.out.println("Apple Cider");
+}
+
+}

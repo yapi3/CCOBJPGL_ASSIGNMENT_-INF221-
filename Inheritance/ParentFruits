@@ -1,0 +1,11 @@
+public class ParentFruits {
+    String color, taste;
+    int NumPcs;
+
+    void checkFruits()
+    {
+        System.out.println("The color is: " + color);
+        System.out.println("The taste is: " + taste);
+        System.out.println("The num of pcs: " + NumPcs);
+    }
+}

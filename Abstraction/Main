@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) throws Exception {
+       
+        //Abstract
+        //Car c = new Car();
+        //c.CarType();
+
+        //Concrete
+        Car Cor = new Corolla();
+        Car Civ = new Civic();
+
+        Cor.CarType();
+        Civ.CarType();
+
+        Cor.SetMake("Toyota");
+        Civ.SetMake("Honda");
+
+        Cor.ShowCarmake();
+        Civ.ShowCarmake();
+    }
+}

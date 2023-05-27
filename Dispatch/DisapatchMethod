@@ -1,0 +1,41 @@
+package oopdispatch;
+//Parent Class
+class A {
+    public void Message() {
+        System.out.println("The Parent Class A");
+    }
+}
+
+//Child Class
+class B extends A {
+    public void Message() {
+        System.out.println("The Child Class B");
+    }
+}
+
+//Another Child Class
+class C extends A {
+    public void Message() {
+        System.out.println("The Another Child Class C");
+    }    
+        }
+
+public class DispatchMethod {
+    
+    public static void main(String[] args) {
+        //this is only polymorphism
+        //A myObj = new B();
+        //myObj.Message();
+        
+        //this is dispatch
+        A myObj = new A();
+        myObj.Message();
+        
+        myObj = new B();
+        myObj.Message();
+        
+        myObj = new C();
+        myObj.Message();
+    }
+    
+}

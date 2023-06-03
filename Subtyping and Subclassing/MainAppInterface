@@ -1,16 +1,21 @@
-public class Toyota implements Car
-{
-
-    @Override
-    public void wiper() {
+package InterfaceInheritance;
+ 
+public class MainAppInterface {
+ 
+    public static void main(String[] args) {
         // TODO Auto-generated method stub
-        System.out.println("My Car is Starting turning the Wiper");
-    }
-
-    @Override
-    public void pass() {
-        // TODO Auto-generated method stub
-        System.out.println("My Car is Doing a Pass Light Signal");
-    }
         
+        //Car c = new Car();
+        
+        Car c = new Toyota();
+        Car h = new Honda();
+        
+        c.wiper();
+        c.pass();
+        
+        h.HondaStart();
+        h.HondaDrive();
+ 
+    }
+ 
 }
